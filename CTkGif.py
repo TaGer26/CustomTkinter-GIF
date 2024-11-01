@@ -16,7 +16,7 @@ class CTkGif():
     def toggle(self, type: bool=None):
         if type:
             self.playing = type
-            if type: self.update()
+            self.update()
         else:
             if self.playing: self.playing = False
             elif not self.playing:
