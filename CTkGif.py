@@ -3,7 +3,6 @@ from PIL import Image
 
 class CTkGif():
     def __init__(self, window: any, file_path: str, update_speed: int=15, debug=False):
-        #   
         self.window, self.playing, self.frame, self.update_speed, self.debug = window, False, 0, update_speed, debug
 
         self.gif_file = Image.open(file_path)
